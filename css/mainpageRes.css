@@ -1,0 +1,231 @@
+/* For mobile devices */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .button-bars {
+    font-size: 20px;
+    text-align: center;
+  }
+  .windl,
+  .Opendis {
+    font-size: 1.25rem;
+  }
+  .img1 img {
+    max-width: 450px;
+  }
+  .background-img {
+    bottom: -100px;
+    left: 150px;
+  }
+  .header-top ul {
+    display: none;
+  }
+  .top {
+    padding: 10px 30px;
+  }
+  .login {
+    margin: 0 25px;
+  }
+  .logo {
+    margin: 0 25px;
+  }
+  .header-bottom h1 {
+    text-align: start;
+    font-size: 5rem;
+  }
+  .header-bottom p {
+    text-align: start;
+    font-size: 1rem;
+  }
+  .button-bars {
+    font-size: 20px;
+    text-align: center;
+    margin-right: 25px;
+  }
+  .imigi {
+    margin: 0 auto;
+  }
+  .heading-des {
+    font-size: 3rem;
+  }
+  .des {
+    text-align: justify;
+    font-size: 1.25rem;
+  }
+  .descrip,
+  .des {
+    padding: 30px;
+  }
+
+  .content1,
+  .content2,
+  .content3,
+  .content4 {
+    display: block;
+  }
+}
+/* iPads and Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .windl,
+  .Opendis {
+    font-size: 1.5rem;
+  }
+  .img1 img {
+    max-width: 450px;
+  }
+  .background-img {
+    bottom: -100px;
+    left: 150px;
+  }
+  .header-top ul {
+    display: none;
+  }
+  .top {
+    padding: 10px 30px;
+  }
+  .login {
+    margin: 0 25px;
+  }
+  .logo {
+    margin: 0 25px;
+  }
+  .header-bottom h1 {
+    text-align: start;
+    font-size: 6rem;
+  }
+  .header-bottom p {
+    text-align: start;
+    font-size: 1.5rem;
+  }
+  .button-bars {
+    font-size: 30px;
+    text-align: center;
+    margin-right: 25px;
+  }
+  .imigi {
+    margin: 0 auto;
+  }
+  .heading-des {
+    font-size: 3.5rem;
+  }
+  .des {
+    text-align: justify;
+    font-size: 1.5rem;
+  }
+  .descrip,
+  .des {
+    padding: 30px;
+  }
+
+  .content1,
+  .content2,
+  .content3,
+  .content4 {
+    display: block;
+  }
+}
+/* laptops and small screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .windl,
+  .Opendis {
+    font-size: 1.5rem;
+  }
+  .header-top ul {
+    display: none;
+  }
+  .logo {
+    margin-left: 0;
+  }
+  .background-img {
+    left: -960px;
+  }
+  .header-bottom h1 {
+    text-align: start;
+    font-size: 7.5rem;
+  }
+  .header-bottom p {
+    text-align: start;
+    font-size: 1.5rem;
+  }
+  .top {
+    grid-column: span 5;
+  }
+  .header-bottom {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .top {
+    padding: 10px 30px;
+  }
+  .login {
+    margin: 0 25px;
+  }
+  .logo {
+    margin: 0 25px;
+  }
+  .button-bars {
+    font-size: 30px;
+    text-align: center;
+    margin-right: 25px;
+  }
+  .imigi {
+    margin: 0 auto;
+  }
+  .heading-des {
+    font-size: 3.5rem;
+  }
+  .des {
+    text-align: justify;
+    font-size: 1.5rem;
+  }
+  .descrip,
+  .des {
+    padding: 30px;
+  }
+
+  .content1,
+  .content2,
+  .content3,
+  .content4 {
+    display: block;
+  }
+}
+/* large Screens and Desktops */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .login {
+    margin: 25px;
+  }
+  .logo {
+    margin: 25px;
+  }
+  .top {
+    padding: 0;
+    height: 500px;
+  }
+  .top h1 {
+    font-size: 6rem;
+  }
+  .top p {
+    font-size: 1.8rem;
+  }
+  .background-img {
+    left: -480px;
+  }
+  .background-img {
+    left: -560px;
+  }
+  .header-bottom h1 {
+    width: 500px;
+  }
+  .header-bottom p {
+    width: 600px;
+  }
+  .button-bars {
+    display: none !important;
+    margin-right: 25px;
+  }
+}
+/* TV and Extra Large Screens  */
+@media screen and (min-width: 1201px) {
+  .button-bars {
+    display: none !important;
+  }
+}

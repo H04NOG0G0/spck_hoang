@@ -1,0 +1,253 @@
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0 auto;
+}
+.container {
+  max-width: 1550px;
+  height: 100vh;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+}
+.content-left {
+  padding-bottom: 132px;
+  padding-top: 80px;
+  margin: 20px;
+  width: 590px;
+  height: 500px;
+  align-items: left;
+}
+.logo {
+  text-decoration: none;
+  color: #5865f2;
+  font-size: 3.7rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+/* font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+.Recent-logins {
+  font-size: 3.6rem;
+  color: #333;
+  line-height: 1.34;
+  font-family: "Inter", sans-serif;
+}
+.desc {
+  color: #606770;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+.account-container {
+  display: flex;
+  gap: 15px;
+}
+.account {
+  position: relative;
+  cursor: pointer;
+}
+.account:hover {
+  box-shadow: 0 0 0 2px #dddfe2;
+}
+.account img {
+  width: 160px;
+  height: 160px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.name {
+  background-color: #fff;
+  width: 160px;
+  padding: 12px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  text-align: center;
+}
+.account p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  line-height: 22px;
+  color: #1c1e21;
+}
+#cross {
+  background-color: #1c1e21;
+  border-radius: 20px;
+  color: white;
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  opacity: 90%;
+  position: relative;
+  top: 25px;
+  left: 5px;
+  cursor: pointer;
+}
+#cross i {
+  padding-top: 5px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: relative;
+  top: -0px;
+  left: -0px;
+}
+.account:hover #cross i {
+  background-color: #fff;
+  color: grey;
+  font-size: 1.6rem;
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+}
+.plus {
+  margin-top: 20px;
+  align-items: center;
+  background-color: #f5f6f7;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  height: 160px;
+  justify-content: center;
+  width: 160px;
+}
+.plus-back {
+  width: 43px;
+  background-color: #5865f2;
+  border-radius: 25px;
+  align-items: center;
+}
+.fa-plus {
+  font-size: 25px;
+  padding: 10px;
+  color: #fff;
+}
+.Add-account {
+  background-color: #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 12px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 160px;
+}
+.Add-account p {
+  color: #5865f2;
+}
+.content-right {
+  padding-bottom: 132px;
+  padding-top: 80px;
+  margin: 20px;
+  align-items: right;
+}
+.form-container {
+  display: block;
+  position: relative;
+}
+.login-container {
+  width: 400px;
+  background-color: #ffffffa4;
+  border-radius: 8px;
+  margin: 40px 0 0;
+  padding: 20px 0 28px;
+  width: 396px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+#username,
+#passcode {
+  border-radius: 6px;
+  font-size: 17px;
+  padding: 14px 16px;
+  width: 360px;
+  height: 51px;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+.formal {
+  padding-left: 20px;
+}
+.login-button {
+  background-color: #5865f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 360px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.forgot {
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  color: #1877f2;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 110px;
+}
+.forgot:hover {
+  text-decoration: underline;
+  color: #5865f2;
+}
+.Create-acc {
+  margin-top: 25px;
+  margin-left: 90px;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+  background-color: #42b72a;
+  color: #fff;
+  cursor: pointer;
+}
+.under-desc {
+  margin-top: 40px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.under-desc a {
+  text-decoration: none;
+}
+.under-desc a:hover {
+  text-decoration: underline;
+  color: #5865f2;
+}
+
+.err-email,
+.err-password {
+  color: red;
+  display: none;
+}
+.err-email a {
+  text-decoration: none;
+  color: red;
+  font-weight: 600;
+}
+.err-emaila:hover {
+  text-decoration: underline;
+}
+.incorrect-pass {
+  display: none;
+}
+.show-hide {
+  position: absolute;
+  font-size: 15px;
+  color: #606770;
+  cursor: pointer;
+  right: 25px;
+  bottom: 25px;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="../js/index.js" defer></script>
+    <script src="../js/signIn.js" defer></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord-login or sigup</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/signin.css" />
+    <link
+      rel="icon"
+      href="https://cdn.logojoy.com/wp-content/uploads/20210422095037/discord-mascot.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content-left">
+        <a href="../html/index.html" class="logo"
+          ><i class="fa-brands fa-discord"></i> DISCORD</a
+        >
+        <p class="Recent-logins">Recent logins</p>
+        <div class="desc">Click your picture or add an account.</div>
+        <div class="account-container">
+          <!-- <div class="account">
+            <div id="cross"><i class="fa-solid fa-xmark"></i></div>
+            <img src="../img/avtaccount.jpg" alt="" />
+            <div class="name">
+              <p>Hoàngg</p>
+            </div>
+          </div> -->
+          <div class="account">
+            <div class="plus">
+              <div class="plus-back"><i class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="Add-account">
+              <p>Add Account</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="login-container">
+          <form action="" class="formal">
+            <div class="form-container">
+              <input
+                class="Email-Address"
+                type="text"
+                id="username"
+                placeholder="Email address or phone number"
+              />
+              <p class="err-email" style="margin-bottom: 20px">
+                You have not entered email/ phone number or leaving it blank.
+                <strong>example : abiqwu@gmail.com</strong>
+              </p>
+            </div>
+            <div class="form-container">
+              <input
+                class="password-input"
+                type="text"
+                id="passcode"
+                placeholder="Password"
+              />
+              <i
+                class="show-hide far fa-eye"
+                id="togglePassword"
+                onclick="showHide()"
+              ></i>
+              <!-- <input type="radio" onclick="showHide()" class="show-hide" /> -->
+              <p class="err-password" style="margin-bottom: 20px">
+                You have not entered password or leaving it blank.
+              </p>
+              <p
+                class="incorrect-pass"
+                style="margin-bottom: 20px; margin-right: 5px; color: red"
+              >
+                maybe your password or Email is incorrect, try again. If you
+                dont have account, click<strong>
+                  Create Account button below!</strong
+                >
+              </p>
+            </div>
+            <button class="login-button">Log in</button>
+            <div class="u-forgot">
+              <p>
+                <a href="#" class="forgot">Forgotten password?</a>
+              </p>
+            </div>
+            <div
+              style="
+                border-bottom: 1px solid #606770;
+                margin-top: 25px;
+                margin-right: 15px;
+              "
+            ></div>
+            <button class="Create-acc" type="button">Create new account</button>
+          </form>
+        </div>
+        <div class="under-desc">
+          <p>
+            <a href="#" style="color: black">
+              <strong>Create an Account</strong></a
+            >
+            to connect with your friends on
+            <a
+              href="../html/index.html"
+              target="_blank"
+              style="
+                color: #5865f2;
+                text-decoration: none;
+                cursor: pointer;
+                font-weight: 800;
+              "
+            >
+              Discord!!</a
+            >.
+          </p>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+          <div class="sign-in-container">
+            <div class="upp-title">
+              <div class="upp">
+                <p class="title-up" style="color: #5865f2; font-weight: 800">
+                  Sign Up
+                </p>
+                <p class="desc-up">It's quick and easy.</p>
+                <i
+                  class="fa-solid fa-xmark"
+                  style="font-size: 24px; display: block"
+                ></i>
+              </div>
+            </div>
+            <div class="form-container2nd">
+              <div class="name-cont">
+                <input
+                  class="FirstName inName"
+                  type="text"
+                  id="name"
+                  placeholder="First name"
+                />
+
+                <input
+                  class="Surname inName"
+                  type="text"
+                  id="name"
+                  placeholder="Surname"
+                />
+              </div>
+
+              <div class="inf4-cont">
+                <input
+                  class="Email-AddressSign"
+                  type="text"
+                  id="name"
+                  placeholder="Mobile number or email address"
+                />
+                <div class="password">
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="New password"
+                    class="password-inputSign"
+                  />
+                </div>
+              </div>
+              <div class="dmy-cont">
+                <div class="day">
+                  <label for="day" class="day-label"
+                    >Date of birth <i class="fa-solid fa-question"></i
+                  ></label>
+                  <input type="date" name="gender" id="female" />
+                </div>
+              </div>
+              <label for="gender" class="label-gender"
+                >gender<i class="fa-solid fa-question"></i>
+              </label>
+              <div class="gender-cont">
+                <div class="female">
+                  <label for="female">female</label>
+                  <input
+                    class="gender"
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="female"
+                  />
+                </div>
+                <div class="male">
+                  <label for="Man">Male</label>
+                  <input
+                    class="gender"
+                    type="radio"
+                    name="gender"
+                    id="Male"
+                    value="male"
+                  />
+                </div>
+                <div class="custom">
+                  <label for="custom">other</label>
+                  <input
+                    class="gender"
+                    type="radio"
+                    name="gender"
+                    id="custom"
+                    value="custom"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="smol-text">
+              <p class="warning">All of the above must be fill!!!</p>
+              <p class="p2">
+                People who use our service may have uploaded your contact
+                information to Facebook. <a href="#">Learn more.</a>.
+              </p>
+              <p class="p1">
+                By clicking Sign Up, you agree to our <a href="#">Terms</a>,
+                <a href="#">Privacy Policy</a> and
+                <a href="#">Cookie Policy</a>. You may receive SMS notifications
+                from us and can opt out at any time.
+              </p>
+            </div>
+            <div>
+              <button class="signUp-button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
